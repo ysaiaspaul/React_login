@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway&display=swap');
+
+.App{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FAE5D4;
+}
+.form-container{
+    background-color: #ffffff;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    height: 95%;
+    display: flex;
+    align-items: center;
+
+}
+
+.form-container .login-container{
+    width: 421px;
+    margin: 0 auto;
+}
+.form-container .login-container > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1f1f1f;
+}
+.form-container .login-container > p,
+.form-container .login-container > span{
+    text-align: center;
+    color: #555555;
+}
+
+.form-container .login-container label{
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.form-container .login-container input.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+.form-container .login-container input.input:focus{
+    outline: solid 2px #0099FF;
+}
+
+.form-container .login-container .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-container a{
+    color: #0099FF;
+    text-decoration: none;
+}
+.form-container a:hover{
+    color: #0099FF;
+    text-decoration: underline;
+}
+.form-container .login-container .providers{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.btn{
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn.btn-login, .btn.btn-signUp {
+    background-color: #1f1f1f;
+    color: #D5D5D5;
+    margin-bottom: 5px;
+}
+
+.btn.btn-login:hover{
+    background-color: #2ea442;
+    color: #d5d5d5;
+}
+.btn.btn-signUp:hover{
+    background-color: #792ea4;
+    color: #d5d5d5;
+}
+.btn.btn-facebook{
+    background-color: #3b5998;
+    color: #D5D5D5;
+}
+.btn.btn-facebook:hover{
+    background-color: #2b416e;
+    color: #D5D5D5;
+}
+.btn.btn-google{
+    background-color: #db3236;
+    color: #D5D5D5;
+}
+.btn.btn-google:hover{
+    background-color: #b4282c;
+    color: #D5D5D5;
+}
+
+
+.form-container .welcome-screen-container{
+    background-color: #1f1f1f;
+    height: 100%;
+    width: 40%;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .form-container{
+        width: 60%;
+    }
+    .form-container .login-container{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .form-container .welcome-screen-container{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .form-container{
+        width: 50%;
+        height: 100%;
+    }
+    .form-container .login-container{
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+
+/*//////////////////Reno/////////////////*/
+
+.merry{
+    color: #616f64;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.mycanvas{
+    height: 510px;
+    width: 350px;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: -12px;
+    top: -100px;
+    z-index: 2;
+
+}
+.reindeer{
+    position: relative;
+    top: 50px;
+    height: 443px;
+}
+.face{
+    background-color: #fbd486;
+    height: 150px;
+    width: 100px;
+    border-radius: 70px;
+    position: relative;
+    top: 100px;
+    left: 120px;
+
+}
+.antler1,.antlerr{
+    height: 25px;
+    width: 90px;
+    border-right: 10px solid #70141f;
+    border-top: 10px solid #70141f;
+    border-radius: 0 20px 0 0;
+    z-index: -1;
+    position: relative;
+}
+.antler1{
+    bottom: 15px;
+    right: 65px;
+}
+
+.a1,.a2,.a3{
+    background-color: #70141f;
+    height: 55px;
+    width: 10px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+.a1{
+    bottom: 55px;
+}
+.a2{
+    bottom: 110px;
+    left: 30px;
+}
+.a3{
+    bottom: 165px;
+    left: 60px;
+}
+.antlerr{
+    left: 55px;
+    bottom: 50px;
+    transform: rotateY(180deg);
+}
+.eye1,.eyer{
+    background-color: #333333;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+.eye1{
+    bottom: 25px;
+    left: 18px;
+}
+.eyer{
+    bottom: 45px;
+    left: 60px;
+}
+.eyeball{
+    background-color: white;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: relative;
+    top: 6px;
+    left: 6px;
+
+}
+.ear1, .earr{
+    background-color: #efac55;
+    height: 30px;
+    width: 60px;
+    border-radius: 0 0 30px 30px;
+    position: relative;
+    z-index: -1;
+}
+.ear1{
+    bottom: 95px;
+    right: 21px;
+    transform: rotate(-25deg);
+}
+.earr{
+    bottom: 125px;
+    left: 60px;
+    transform: rotate(25deg);
+}
+.nose{
+    background-color: #ef335d;
+    height: 22px;
+    width: 35px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 97px;
+    left: 32px;
+}
+.legl,.legr{
+    background-color: #70140f;
+    height: 100px;
+    width: 20px;
+    position: relative;
+    border-radius: 0 0 8px 8px;
+    z-index: -2;
+}
+.legl{
+    left: 140px;
+    top: 150px;
+}
+.legr{
+    left: 180px;
+    top: 51px;
+}
+.body{
+    background-color: #efac55;
+    height: 200px;
+    width: 130px;
+    border-radius: 100px;
+    position: relative;
+    bottom: 205px;
+    left: 105px;
+    z-index: -1;
+}
+
+/*//////////////////ACCOUNT 1/////////////////*/
+
+.container{
+    height: 1000px;
+    display: flex;
+}
+.welcome{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 640px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 81vh;
+    background-color: #fae5d4;
+}
+.welcome p{
+    background-color: #616F64;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px;
+    height: 35%;
+    color: #ffffff;
+
+}
+.welcome h2{
+    color: #616F64;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome h2 span{
+    color: #a43f42;
+}
+.btn.btn-logout{
+    width: 30%;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    margin: 2% 0 -5% 0;
+}
+.btn.btn-logout:hover{
+    background-color: #ff4646;
+}
