@@ -1,5 +1,5 @@
 
-#I remove the firebase.js file
+# I remove the firebase.js file
 You need to add your own api Key, authDomain etc from a firebase project in order to run the app correctly.
 
 
