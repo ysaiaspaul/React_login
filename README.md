@@ -1,3 +1,8 @@
+
+#I remove the firebase.js file
+You need to add your own api Key, authDomain etc from a firebase project in order to run the app correctly.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
